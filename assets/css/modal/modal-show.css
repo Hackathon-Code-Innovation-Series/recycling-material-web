@@ -1,0 +1,4 @@
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+}
