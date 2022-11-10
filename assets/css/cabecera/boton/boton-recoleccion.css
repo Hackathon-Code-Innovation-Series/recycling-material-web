@@ -1,0 +1,17 @@
+.boton__recoleccion{
+    border-radius: 15px;
+    color: #ebf5f2;
+    background-color: #056425;
+    border-style: solid;
+    border-color: #ebf5f2;
+    height: 90%;
+    width: 95%;
+}
+
+.boton__recoleccion:hover{
+    background-color: #ebf5f2;
+    border-style: solid;
+    border-color: #056425;
+    color: #056425;
+    border-width: 1.5px;
+}

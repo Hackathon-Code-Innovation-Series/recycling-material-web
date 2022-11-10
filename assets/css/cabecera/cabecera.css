@@ -1,0 +1,6 @@
+.cabecera{
+    display: flex;
+    height: 120px;
+    flex-direction: column;
+    align-items: center;
+}
