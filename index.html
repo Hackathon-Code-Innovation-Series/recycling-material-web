@@ -1,20 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/cabecera/cabecera.css">
+    <link rel="stylesheet" href="./assets/css/cabecera/mensaje/mensaje.css">
+    <link rel="stylesheet" href="./assets/css/cabecera/mensaje/mensaje-info.css">
+    <link rel="stylesheet" href="./assets/css/cabecera/mensaje/mensaje-plus.css">
+    <link rel="stylesheet" href="./assets/css/cabecera/mensaje/mensaje-logo.css">
+    <link rel="stylesheet" href="./assets/css/cabecera/menu/menu.css">
+    <link rel="stylesheet" href="./assets/css/cabecera/boton/boton.css">
+    <link rel="stylesheet" href="./assets/css/cabecera/boton/boton-recoleccion.css">
+    <link rel="stylesheet" href="./assets/css/cuerpo/mapa/mapa.css">
+    <link rel="stylesheet" href="./assets/css/cuerpo/mapa/mapa-info.css">
+    <link rel="stylesheet" href="./assets/css/cuerpo/mapa/mapa-plano.css">
+    <link rel="stylesheet" href="./assets/css/modal/modal.css">
+    <link rel="stylesheet" href="./assets/css/modal/modal-container.css">
+    <link rel="stylesheet" href="./assets/css/modal/modal-show.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+    <title>Recycling Web</title>
 </head>
+
 <body>
-    <header>
-
+    <header class="cabecera">
+        <section class="mensaje">
+            <h2 class="mensaje__info">Juntos por un planeta mejor</h2>
+            <span class="typed mensaje__plus"></span>
+            <img class="mensaje__logo" src="./assets/img/boy-planet.png" alt="boy-planet-logo">
+        </section>
+        <div class="boton">
+            <button class="boton__recoleccion">
+                <a href="#" id="modal--open">Ingresar punto de recolección</a>
+            </button>
+        </div>
     </header>
-    <main>
+    <main class="cuerpo">
+        <section class="mapa">
+            <div class="mapa__info">
 
+            </div>
+            <div class="mapa__plano" id="map"></div>
+        </section>
     </main>
+
+    <section class="modal" id="modal">
+        <div class="modal__container">
+            <h2 class="title">
+                Agregar el punto de acopio
+            </h2>
+            <form class="coordenadas">
+                <label for="">Longitud</label>
+                <input type="number" name="" id="">
+                <label for="">Latitud</label>
+                <input type="number" name="" id="">
+            </form>
+            <div class="preview">
+                <div class="mapa__preview" id="map"></div
+            </div>
+            <div class="buttons">
+                <button class="button__add">
+                    Agregar
+                </button>
+                <button class="button_close">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </section>
     <footer>
-        
+
     </footer>
+    <script src="./assets/js/cuerpo/mapa/map.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="./assets/js/modal/modal.js"></script>
+    <script src="./assets/js/cabecera/mensaje/mensaje.js"></script>
+
 </body>
+
 </html>
