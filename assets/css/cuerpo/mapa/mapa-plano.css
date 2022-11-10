@@ -1,0 +1,5 @@
+.mapa__plano{
+    width: 250px;
+    height: 400px;
+    z-index: -1;
+}
